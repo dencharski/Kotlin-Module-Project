@@ -2,7 +2,7 @@ package basescreens
 
 import java.util.*
 
-open class BaseScreen() {
+abstract class BaseScreen() {
     open var name: String = "No name"
     open var mutableMenuList: MutableList<String>? = mutableListOf()
     open var isUserChoose: Boolean = true
@@ -89,12 +89,8 @@ open class BaseScreen() {
         println("Название экрана")
     }
 
-    open fun startCreateScreen() {
+    abstract  fun startCreateScreen()
 
-    }
-
-    open fun startCurrentScreen(number: Int) {
-
-    }
+    abstract fun startCurrentScreen(number: Int)
 
 }
