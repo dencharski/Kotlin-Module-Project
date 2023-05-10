@@ -1,3 +1,9 @@
+import java.io.IOException
+
 fun main(args: Array<String>) {
-    println("Hello World!")
+
+
+    ArchivesScreen().start()
+
 }
+
